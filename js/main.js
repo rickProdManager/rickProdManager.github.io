@@ -2,12 +2,14 @@
 
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
-oReq.open("GET", "../test.txt");
+oReq.open("GET", "https://raw.githubusercontent.com/FridaPolished/robohoover/master/test.txt");
 oReq.send();
 
 function reqListener() {
   var obj = this.responseText;
+  console.log("123");
   console.log(obj);
+  console.log("456");
 
 }
 
