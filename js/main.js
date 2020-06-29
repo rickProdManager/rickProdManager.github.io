@@ -12,7 +12,7 @@
 // }
 
 
-document.querySelector("#file-input").addEventListener('change', function () {
+document.querySelector("#hoover-file").addEventListener('change', function () {
   // files that user has chosen
   var all_files = this.files;
   if (all_files.length == 0) {
@@ -37,7 +37,7 @@ document.querySelector("#file-input").addEventListener('change', function () {
 
   // file reading started
   reader.addEventListener('loadstart', function () {
-    document.querySelector("#file-input-label").style.display = 'none';
+    document.querySelector("#hoover-file-label").style.display = 'none';
   });
 
   // file reading finished successfully
