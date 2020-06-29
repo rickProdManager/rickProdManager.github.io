@@ -12,7 +12,7 @@
 // }
 
 
-document.querySelector("#hoover-file").addEventListener('change', function () {
+document.querySelector("#file-input").addEventListener('change', function () {
   // files that user has chosen
   var all_files = this.files;
   if (all_files.length == 0) {
